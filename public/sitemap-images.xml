@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://schoolagecalculator.online/</loc>
+    <image:image>
+      <image:loc>https://schoolagecalculator.online/og-image.png</image:loc>
+      <image:title>School Age Calculator — Find Your Child's Grade Level</image:title>
+      <image:caption>Free school age calculator covering USA, UK, Australia and Canada. Enter a date of birth to find grade level, enrollment year, and graduation year.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://schoolagecalculator.online/logo.svg</image:loc>
+      <image:title>School Age Calculator Logo</image:title>
+    </image:image>
+  </url>
+</urlset>

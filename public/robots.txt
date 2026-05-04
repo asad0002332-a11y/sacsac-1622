@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /cdn-cgi/
+
+# No crawl delay for Googlebot — let it index freely
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Sitemaps
+Sitemap: https://schoolagecalculator.online/sitemap.xml
+Sitemap: https://schoolagecalculator.online/sitemap-images.xml

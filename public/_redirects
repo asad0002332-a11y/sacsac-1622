@@ -1,0 +1,19 @@
+# Trailing slash canonicalization
+/guides/usa/ /guides/usa 301
+/guides/uk/ /guides/uk 301
+/guides/australia/ /guides/australia 301
+/guides/canada/ /guides/canada 301
+/privacy/ /privacy 301
+/terms/ /terms 301
+/cookies/ /cookies 301
+/contact/ /contact 301
+
+# Legacy/common URL variations
+/guide/usa /guides/usa 301
+/guide/uk /guides/uk 301
+/guide/australia /guides/australia 301
+/guide/canada /guides/canada 301
+/us /guides/usa 301
+/uk /guides/uk 301
+/australia /guides/australia 301
+/canada /guides/canada 301

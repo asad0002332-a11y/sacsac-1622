@@ -1,0 +1,67 @@
+{
+  "name": "School Age Calculator",
+  "short_name": "SAC",
+  "description": "Free school age calculator for USA, UK, Australia and Canada. Find your child's grade level, enrollment year, and graduation year instantly.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFBEB",
+  "theme_color": "#F59E0B",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["education", "utilities"],
+  "iarc_rating_id": "",
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "/icon-16x16.png",  "sizes": "16x16",   "type": "image/png" },
+    { "src": "/icon-32x32.png",  "sizes": "32x32",   "type": "image/png" },
+    { "src": "/icon-48x48.png",  "sizes": "48x48",   "type": "image/png" },
+    { "src": "/icon-72x72.png",  "sizes": "72x72",   "type": "image/png" },
+    { "src": "/icon-96x96.png",  "sizes": "96x96",   "type": "image/png" },
+    { "src": "/icon-144x144.png","sizes": "144x144", "type": "image/png" },
+    { "src": "/icon-192x192.png","sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512x512.png","sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "School Age Calculator — Find Your Child's Grade"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Calculate Grade",
+      "short_name": "Calculate",
+      "description": "Jump straight to the school age calculator",
+      "url": "/#calculator",
+      "icons": [{ "src": "/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "USA Guide",
+      "short_name": "USA",
+      "description": "US school starting ages by state",
+      "url": "/guides/usa",
+      "icons": [{ "src": "/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "UK Guide",
+      "short_name": "UK",
+      "description": "UK school year groups explained",
+      "url": "/guides/uk",
+      "icons": [{ "src": "/icon-96x96.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
