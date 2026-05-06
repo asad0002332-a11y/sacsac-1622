@@ -54,8 +54,11 @@ export default function GuideUK() {
       />
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-amber-100 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 h-16 flex items-center gap-4">
-          <Link href="/"><a className="flex items-center gap-2.5"><img src="/logo.svg" alt="SAC" className="w-9 h-9" /><span className="font-extrabold text-lg text-slate-800">School Age <span className="text-amber-500">Calculator</span></span></a></Link>
-          <Link href="/#articles"><a className="ml-auto text-sm font-semibold text-slate-500 hover:text-amber-500 transition-colors">← All Guides</a></Link>
+          <Link href="/" className="flex items-center gap-2.5">
+            <img src="/logo.svg" alt="SAC" className="w-9 h-9" />
+            <span className="font-extrabold text-lg text-slate-800">School Age <span className="text-amber-500">Calculator</span></span>
+          </Link>
+          <Link href="/#articles" className="ml-auto text-sm font-semibold text-slate-500 hover:text-amber-500 transition-colors">← All Guides</Link>
         </div>
       </nav>
 
@@ -77,7 +80,7 @@ export default function GuideUK() {
         <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-6 mb-10 flex flex-col sm:flex-row items-center gap-4">
           <div className="text-4xl">🎓</div>
           <div className="flex-1"><p className="font-bold text-slate-800">Find your child's UK year group instantly</p><p className="text-slate-600 text-sm">Enter their date of birth in our free calculator for an instant result.</p></div>
-          <Link href="/#calculator"><a className="bg-amber-400 hover:bg-amber-500 text-white font-bold px-6 py-3 rounded-full text-sm transition-colors whitespace-nowrap">Calculate Now →</a></Link>
+          <Link href="/#calculator" className="bg-amber-400 hover:bg-amber-500 text-white font-bold px-6 py-3 rounded-full text-sm transition-colors whitespace-nowrap">Calculate Now →</Link>
         </div>
 
         <div className="space-y-8 text-slate-700 leading-relaxed">
@@ -176,15 +179,15 @@ export default function GuideUK() {
         <div className="mt-14 bg-gradient-to-br from-amber-400 to-orange-400 rounded-2xl p-8 text-center text-white">
           <h3 className="text-2xl font-extrabold mb-2">Find Your Child's UK Year Group</h3>
           <p className="mb-5 opacity-90">Enter their date of birth for an instant result.</p>
-          <Link href="/#calculator"><a className="inline-block bg-white text-amber-600 font-bold px-8 py-3 rounded-full hover:bg-amber-50 transition-colors">Use the Calculator →</a></Link>
+          <Link href="/#calculator" className="inline-block bg-white text-amber-600 font-bold px-8 py-3 rounded-full hover:bg-amber-50 transition-colors">Use the Calculator →</Link>
         </div>
 
         <div className="mt-10">
           <h3 className="font-bold text-slate-800 mb-4">More Guides</h3>
           <div className="grid sm:grid-cols-3 gap-3">
-            <Link href="/guides/usa"><a className="bg-blue-50 border border-blue-100 rounded-xl p-4 hover:shadow-md transition-shadow"><span className="text-xl">🇺🇸</span><p className="font-semibold text-slate-800 text-sm mt-1">USA State Guide</p></a></Link>
-            <Link href="/guides/australia"><a className="bg-green-50 border border-green-100 rounded-xl p-4 hover:shadow-md transition-shadow"><span className="text-xl">🇦🇺</span><p className="font-semibold text-slate-800 text-sm mt-1">Australia School Ages</p></a></Link>
-            <Link href="/guides/canada"><a className="bg-red-50 border border-red-100 rounded-xl p-4 hover:shadow-md transition-shadow"><span className="text-xl">🇨🇦</span><p className="font-semibold text-slate-800 text-sm mt-1">Canada Province Guide</p></a></Link>
+            <Link href="/guides/usa" className="bg-blue-50 border border-blue-100 rounded-xl p-4 hover:shadow-md transition-shadow"><span className="text-xl">🇺🇸</span><p className="font-semibold text-slate-800 text-sm mt-1">USA State Guide</p></Link>
+            <Link href="/guides/australia" className="bg-green-50 border border-green-100 rounded-xl p-4 hover:shadow-md transition-shadow"><span className="text-xl">🇦🇺</span><p className="font-semibold text-slate-800 text-sm mt-1">Australia School Ages</p></Link>
+            <Link href="/guides/canada" className="bg-red-50 border border-red-100 rounded-xl p-4 hover:shadow-md transition-shadow"><span className="text-xl">🇨🇦</span><p className="font-semibold text-slate-800 text-sm mt-1">Canada Province Guide</p></Link>
           </div>
         </div>
       </article>

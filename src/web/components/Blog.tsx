@@ -1,4 +1,4 @@
-import { Link, useLocation } from "wouter";
+import { Link } from "wouter";
 
 const articles = [
   {
@@ -44,8 +44,6 @@ const articles = [
 ];
 
 export default function Blog() {
-  const [, navigate] = useLocation();
-
   return (
     <section id="articles" className="py-20 bg-amber-50">
       <div className="max-w-6xl mx-auto px-4">
@@ -57,32 +55,30 @@ export default function Blog() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {articles.map((article, i) => (
-            <Link key={i} href={article.href}>
-              <a className="block bg-white rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden group cursor-pointer">
-                <div className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="text-2xl">{article.flag}</span>
-                    <span className={`text-xs font-bold px-3 py-1 rounded-full ${article.tagColor}`}>{article.tag}</span>
-                    <span className="text-xs text-slate-400 ml-auto">{article.readTime}</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-800 leading-snug mb-3 group-hover:text-amber-600 transition-colors">
-                    {article.title}
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">{article.excerpt}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {article.topics.map(t => (
-                      <span key={t} className="text-xs bg-amber-50 text-amber-700 border border-amber-200 rounded-full px-3 py-1 font-medium">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
+            <Link key={i} href={article.href} className="block bg-white rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden group cursor-pointer">
+              <div className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-2xl">{article.flag}</span>
+                  <span className={`text-xs font-bold px-3 py-1 rounded-full ${article.tagColor}`}>{article.tag}</span>
+                  <span className="text-xs text-slate-400 ml-auto">{article.readTime}</span>
                 </div>
-                <div className="px-6 pb-5">
-                  <span className="block w-full text-center text-amber-600 font-semibold text-sm border border-amber-200 group-hover:border-amber-400 rounded-xl py-2.5 transition-colors bg-amber-50 group-hover:bg-amber-100">
-                    Read Guide →
-                  </span>
+                <h3 className="text-lg font-bold text-slate-800 leading-snug mb-3 group-hover:text-amber-600 transition-colors">
+                  {article.title}
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-4">{article.excerpt}</p>
+                <div className="flex flex-wrap gap-2">
+                  {article.topics.map(t => (
+                    <span key={t} className="text-xs bg-amber-50 text-amber-700 border border-amber-200 rounded-full px-3 py-1 font-medium">
+                      {t}
+                    </span>
+                  ))}
                 </div>
-              </a>
+              </div>
+              <div className="px-6 pb-5">
+                <span className="block w-full text-center text-amber-600 font-semibold text-sm border border-amber-200 group-hover:border-amber-400 rounded-xl py-2.5 transition-colors bg-amber-50 group-hover:bg-amber-100">
+                  Read Guide →
+                </span>
+              </div>
             </Link>
           ))}
         </div>

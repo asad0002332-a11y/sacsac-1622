@@ -7,12 +7,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-5 gap-10 mb-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/"><a className="flex items-center gap-2.5 mb-3 group">
+            <Link href="/" className="flex items-center gap-2.5 mb-3 group">
               <img src="/logo.svg" alt="School Age Calculator Logo" className="w-10 h-10 flex-shrink-0" />
               <span className="font-extrabold text-lg leading-tight text-white">
                 School Age <span className="text-amber-400">Calculator</span>
               </span>
-            </a></Link>
+            </Link>
             <p className="text-sm leading-relaxed">Free school age calculator for USA, UK, Australia and Canada. Instant results by date of birth.</p>
           </div>
 
@@ -51,10 +51,10 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white text-sm mb-4">Legal & Contact</h4>
             <ul className="space-y-2 text-sm mb-5">
-              <li><Link href="/privacy"><a className="hover:text-amber-400 transition-colors">Privacy Policy</a></Link></li>
-              <li><Link href="/terms"><a className="hover:text-amber-400 transition-colors">Terms of Use</a></Link></li>
-              <li><Link href="/cookies"><a className="hover:text-amber-400 transition-colors">Cookie Policy</a></Link></li>
-              <li><Link href="/contact"><a className="hover:text-amber-400 transition-colors">Contact Us</a></Link></li>
+              <li><Link href="/privacy" className="hover:text-amber-400 transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-amber-400 transition-colors">Terms of Use</Link></li>
+              <li><Link href="/cookies" className="hover:text-amber-400 transition-colors">Cookie Policy</Link></li>
+              <li><Link href="/contact" className="hover:text-amber-400 transition-colors">Contact Us</Link></li>
             </ul>
             <div className="space-y-1.5 text-xs">
               <a href="mailto:hello@schoolagecalculator.online" className="flex items-center gap-2 hover:text-amber-400 transition-colors">

@@ -15,13 +15,11 @@ export default function NavBar() {
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-amber-100 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/">
-          <a className="flex items-center gap-2.5 group">
-            <img src="/logo.svg" alt="School Age Calculator Logo" className="w-9 h-9 flex-shrink-0 transition-transform group-hover:scale-105" />
-            <span className="font-extrabold text-lg leading-tight text-slate-800">
-              School Age <span className="text-amber-500">Calculator</span>
-            </span>
-          </a>
+        <Link href="/" className="flex items-center gap-2.5 group">
+          <img src="/logo.svg" alt="School Age Calculator Logo" className="w-9 h-9 flex-shrink-0 transition-transform group-hover:scale-105" />
+          <span className="font-extrabold text-lg leading-tight text-slate-800">
+            School Age <span className="text-amber-500">Calculator</span>
+          </span>
         </Link>
 
         {/* Desktop links */}

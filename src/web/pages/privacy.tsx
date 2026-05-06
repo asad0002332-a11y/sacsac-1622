@@ -22,8 +22,11 @@ export default function Privacy() {
       />
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-amber-100 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 h-16 flex items-center gap-4">
-          <Link href="/"><a className="flex items-center gap-2.5"><img src="/logo.svg" alt="SAC" className="w-9 h-9" /><span className="font-extrabold text-lg text-slate-800">School Age <span className="text-amber-500">Calculator</span></span></a></Link>
-          <Link href="/"><a className="ml-auto text-sm font-semibold text-slate-500 hover:text-amber-500 transition-colors">← Home</a></Link>
+          <Link href="/" className="flex items-center gap-2.5">
+            <img src="/logo.svg" alt="SAC" className="w-9 h-9" />
+            <span className="font-extrabold text-lg text-slate-800">School Age <span className="text-amber-500">Calculator</span></span>
+          </Link>
+          <Link href="/" className="ml-auto text-sm font-semibold text-slate-500 hover:text-amber-500 transition-colors">← Home</Link>
         </div>
       </nav>
 
@@ -176,12 +179,15 @@ function PageFooter() {
   return (
     <footer className="bg-slate-900 text-slate-400 py-8 mt-14">
       <div className="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
-        <Link href="/"><a className="flex items-center gap-2"><img src="/logo.svg" alt="SAC" className="w-7 h-7"/><span className="text-white font-bold">School Age Calculator</span></a></Link>
+        <Link href="/" className="flex items-center gap-2">
+          <img src="/logo.svg" alt="SAC" className="w-7 h-7" />
+          <span className="text-white font-bold">School Age Calculator</span>
+        </Link>
         <div className="flex gap-4">
-          <Link href="/privacy"><a className="hover:text-amber-400 transition-colors">Privacy Policy</a></Link>
-          <Link href="/terms"><a className="hover:text-amber-400 transition-colors">Terms of Use</a></Link>
-          <Link href="/cookies"><a className="hover:text-amber-400 transition-colors">Cookie Policy</a></Link>
-          <Link href="/contact"><a className="hover:text-amber-400 transition-colors">Contact</a></Link>
+          <Link href="/privacy" className="hover:text-amber-400 transition-colors">Privacy Policy</Link>
+          <Link href="/terms" className="hover:text-amber-400 transition-colors">Terms of Use</Link>
+          <Link href="/cookies" className="hover:text-amber-400 transition-colors">Cookie Policy</Link>
+          <Link href="/contact" className="hover:text-amber-400 transition-colors">Contact</Link>
         </div>
         <p>© {new Date().getFullYear()} schoolagecalculator.online</p>
       </div>
